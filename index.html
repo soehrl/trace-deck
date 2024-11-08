@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    
+<script type="module" nonce="yXPC/zvXaZQ+b/q42ikfOQ==">
+import init, * as bindings from '/trace-deck-1cfbf7d7a4635569.js';
+const wasm = await init('/trace-deck-1cfbf7d7a4635569_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+
+    <style>
+        canvas {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+<link rel="modulepreload" href="/trace-deck-1cfbf7d7a4635569.js" crossorigin=anonymous integrity="sha384-ZdLDdn6WdNsb4zcc3aoF8Ws2rz+Q2aB/e8xK+FvMHSsdGomOhWzF2cECu35h0Yce">
+<link rel="preload" href="/trace-deck-1cfbf7d7a4635569_bg.wasm" crossorigin=anonymous integrity="sha384-4gLOUO2lukrrJnEzaBhiVKBiIzZp9S/Ztp+eBrc13g9/Oq2S7nuOowEUotaTjuZR" as="fetch" type="application/wasm"></head>
+
+<body>
+    <canvas id="eframe"></canvas>
+</body>
+
+</html>
